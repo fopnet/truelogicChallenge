@@ -20,11 +20,13 @@ public class Fibonacci {
      * @return
      */
     BigInteger fibo(int n) {
-        if (n < 1) {
+        if (n < 0) {
             throw new RuntimeException("Parameter must be higher than 0");
         }
 
-        if (n <= 2) {
+        if (n == 0) {
+            return BigInteger.ZERO;
+        } else if (n <= 2) {
             return BigInteger.ONE;
         } else {
             return fibo(n - 1).add(fibo(n - 2));
@@ -33,7 +35,7 @@ public class Fibonacci {
     }
 
     public static void main(String[] args) {
-        int n = 45;
+        int n = 5;
         System.out.printf("Fib of %d is %d \n", n, new Fibonacci().fibo(n));
     }
 }

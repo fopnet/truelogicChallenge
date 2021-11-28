@@ -29,14 +29,16 @@ public class FibonacciMemoized {
      * @return
      */
     private BigInteger fibo(int n, BigInteger[] memo) {
-        if (n < 1) {
+        if (n < 0) {
             throw new RuntimeException("Parameter must be higher than 0");
         }
-        if (memo[n - 1] != null) {
-            return memo[n - 1];
-        }
-        if (n <= 2) {
+
+        if (n == 0) {
+            return BigInteger.ZERO;
+        } else if (n <= 2) {
             return BigInteger.ONE;
+        } else if (memo[n - 1] != null) {
+            return memo[n - 1];
         } else {
             memo[0] = BigInteger.ONE;
             memo[1] = BigInteger.ONE;
@@ -50,7 +52,7 @@ public class FibonacciMemoized {
         /**
          * fib(5) -> 5, fib(20) -> 6765, fib(35) -> 9227465
          */
-        int n = 10000;
+        int n = 5;
         System.out.printf("Fib of %d is %d \n", n, new FibonacciMemoized().fibo(n));
     }
 }
