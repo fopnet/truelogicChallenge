@@ -1,3 +1,4 @@
+package codility;
 
 /**
  * A binary gap within a positive integer N is any maximal sequence of

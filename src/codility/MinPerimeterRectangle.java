@@ -1,3 +1,5 @@
+package codility;
+
 /**
  * An integer N is given, representing the area of some rectangle.
  * 

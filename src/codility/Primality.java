@@ -1,3 +1,4 @@
+package codility;
 
 /**
  * The primality test of n can be performed in an analogous way to counting the

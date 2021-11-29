@@ -1,3 +1,5 @@
+package codility;
+
 import java.math.BigInteger;
 
 public class Fibonacci {

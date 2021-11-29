@@ -1,3 +1,4 @@
+package codility;
 
 /**
  * Let’s count the number of divisors of n. The easiest approach is to iterate
