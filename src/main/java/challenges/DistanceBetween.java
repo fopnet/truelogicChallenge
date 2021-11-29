@@ -34,7 +34,7 @@ public class DistanceBetween {
         // test 1
         Integer[] testArray1 = { 3, 9, 50, 15, 99, 7, 98, 65 };
         // assert result == 1;
-        var result = closestDistanceBetweenNumbers(testArray1);
+        int result = closestDistanceBetweenNumbers(testArray1);
         assertResult(1, result);
 
         // test 2
