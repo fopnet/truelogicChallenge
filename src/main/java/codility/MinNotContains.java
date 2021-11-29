@@ -32,7 +32,7 @@ public class MinNotContains {
     public int solution(int[] arr) {
 
         java.util.List<Integer> lastPositive = java.util.Arrays.stream(arr).boxed()
-                .filter(i -> i > 0)
+                // .filter(i -> i > 0)
                 .sorted()
                 .collect(Collectors.toList());
 
@@ -41,6 +41,7 @@ public class MinNotContains {
             Integer curr = lastPositive.get(i);
             next = lastPositive.get(i + 1);
             if (next - curr > 1) {
+                next = curr;
                 break;
             }
         }
@@ -49,9 +50,9 @@ public class MinNotContains {
     }
 
     public static void main(String[] args) {
-        // int[] a = { 1, 3, 6, 4, 1, 2 };
+        int[] a = { 1, 3, 6, 4, 1, 2 };
         // int[] a = { 1, 3, 2 };
-        int[] a = { -1, -3 };
+        // int[] a = { -1, -3 };
 
         System.out.printf("\n%s :: %s smallest positive integer %d\n", MinNotContains.class.getName(), a,
                 new MinNotContains().solution(a));
