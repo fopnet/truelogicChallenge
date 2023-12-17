@@ -7,9 +7,9 @@ public class FibonacciBottonUp {
     /**
      * Melhor solução
      * @formatter:off
-     * position 1, 2, 3, 4, 5, 6, 7, 08, 09, 10
-     * Result   0, 1, 2, 3, 5, 8, 13, 21, 34, 55
-     * fib(1)  -> 0
+     * position 0, 1, 2, 3, 4, 5, 6, 7, 08, 09, 10
+     * Result   0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+     * fib(1)  -> 1
      * fib(2)  -> 1
      * fib(3)  -> 2
      * fib(4)  -> 3
